@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>ToDoLisT</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-Do List</h1>
+
+      <section class="task-form">
+        <form id="form-input">
+          <label for="task-name">Task Name:</label>
+          <input
+            type="text"
+            id="task-name"
+            placeholder="Enter a task..."
+            required
+          />
+          <button id="send-task" type="submit">Add Task</button>
+        </form>
+      </section>
+
+      <section class="tasks-container">
+        <h2>Tasks: <span id="number-of-tasks"></span></h2>
+        <section class="completed">
+          <h3><span id="completed-percentage">0</span></h3>
+          <h2 id="compare-tasks"></h2>
+        </section>
+        <ul id="list-items"></ul>
+      </section>
+    </div>
+  </body>
+</html>

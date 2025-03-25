@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.task-form {
+  margin-bottom: 2rem;
+}
+
+#form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+#task-name {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#send-task {
+  padding: 0.6rem;
+  background-color: #5c6bc0;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+#send-task:hover {
+  background-color: #3f51b5;
+}
+
+.tasks-container {
+  margin-bottom: 2rem;
+}
+
+#list-items {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+li {
+  list-style-type: none;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease-in-out;
+}
+
+li:hover {
+  background-color: #e8e8e8;
+}
+
+.complete {
+  color: green;
+}
+
+.incomplete {
+  color: red;
+}
+
+.completed {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #5c6bc0;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.25s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #3f51b5;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
